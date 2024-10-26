@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+
+   <div class ="w-full bg-zinc-900 text-white p-10">
+    <h3 class="text-3xl mb-5">Create Account</h3>
+    <form action="/" method="post">
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="name" placeholder="Enter Name" required>
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="email" name="email" placeholder="Enter email" required>
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="password" name="password" placeholder="Password" required>
+        <input class="px-5 py-2 bg-blue-500" type="submit" value="Create User">
+    </form>
+    <div class="mt-5">
+        <a href="/Users" class="px-5 py-2 bg-blue-500">View Users</a>
+        <a href="/Update" class="px-5 py-2 ml-2 bg-blue-500">Update Users</a>
+    </div>
+</div>
+
+<!-- 
+<div class="w-full min-h-screen bg-zinc-900 text-white p-10">
+    <h3 class="text-3xl mb-5">Delete Account</h3> 
+    <form action="/delete" method="POST">
+        <input type="hidden" name="_method" value="DELETE"> 
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="name" placeholder="Enter Name" required>
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="email" name="email" placeholder="Enter email" required>
+        <input class="px-5 py-2 bg-blue-500" type="submit" value="Delete User">
+    </form>
+</div>
+-->
+
+<div class="w-full min-h-screen bg-zinc-900 text-white p-10">
+    <h3 class="text-3xl mb-5">Delete Account</h3>
+    <form action="/delete" method="POST">
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="name" placeholder="Enter Name" required>
+        <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="email" name="email" placeholder="Enter email" required>
+        <input class="px-5 py-2 bg-blue-500" type="submit" value="Delete User">
+    </form>
+</div>
+
+
+
+</body>
+</html>
