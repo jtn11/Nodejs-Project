@@ -7,13 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="w-full min-h-screen bg-zinc-900 text-white p-10">
-        <h3 class="text-3xl mb-5">Update User Name</h3>
-        <form action="/update" method="POST">
-            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="email" name="email" placeholder="Enter Email" required>
-            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="newName" placeholder="Enter New Name" required>
-            <input class="px-5 py-2 bg-blue-500" type="submit" value="Update User Name">
+
+    <div class ="w-full min-h-screen bg-zinc-900 text-white p-10">
+        <h3 class="text-3xl mb-5">Update Book </h3>
+
+        <form action="/update" method="post">
+            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="Title" placeholder="Search Book" required><br>
+            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800 mt-7" type="text" name="newTitle" placeholder="New Title" required>
+            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800 mt-7" type="text" name="newAuthor" placeholder="New Author" required>
+            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="newPublisher" placeholder="New Publisher" required>
+            <input class="px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" name="newPublishedDate" placeholder="New PublishedDate" required>
+            <input class="px-5 py-2 rounded-md bg-blue-500 ml-2" type="submit" value="Update Book">
         </form>
-    </div>    
+    </div>
+
 </body>
 </html>
